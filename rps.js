@@ -20,8 +20,10 @@ function getComputerChoice() {
 
 
 
-function playerSelection() {
-
+function getplayerChoice() {
+  playerChoice = prompt("ROCK, PAPER, SCISSORS?")
+  capitalizePlayerChoice = playerChoice.toUpperCase()
+  return capitalizePlayerChoice
 }
 
 // get user input using prompt
@@ -42,4 +44,4 @@ function game() {
 
 }
 
-console.log(getComputerChoice())
+getplayerChoice()
